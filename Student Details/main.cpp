@@ -7,15 +7,18 @@ public:
     string name,address;
     int zipcode, roll;
 
-  Student(string n,int r, string add,int zip){
+  Student(string a){
     cout<<" This is Student Details: "<<endl;
-    name=n; roll=r; address=add; zipcode=zip;
-    cout<<" Name of The Student: "<<name<<"\n "<<"Roll of The Student: "<<roll<<"\n ";
-    cout<<"Address of The Student: "<<address<<"\n "<<"Zipcode of The Student: "<<zipcode;
+    name=a;
+    cout<<" Name of The Student: "<<name<<"\n ";
   }
-  ~Student(){
-    cout<<"\n\n Student Details is closed."<<endl;
-   }
+  Student(int a, string b,int c){
+     roll=a; address=b; zipcode=c;
+     cout<<"Roll of The Student: "<<roll<<"\n ";
+     cout<<"Address of The Student: "<<address<<"\n ";
+     cout<<"Zipcode of The Student: "<<zipcode;
+  }
+
 
 };
 int main(){
@@ -26,6 +29,7 @@ int main(){
     cout<<"Enter Roll of The Student: "; cin>>roll;
     cout<<"Enter Address of The Student: "; cin>>address;
     cout<<"Enter Zipcode of The Student: "; cin>>zipcode; cout<<"\n";
-    Student Object(name,roll,address,zipcode);
+    Student Object1(name);
+    Student Object2(roll,address,zipcode);
    return 0;
 }
