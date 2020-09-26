@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1601058770 source:c:\users\act\desktop\mid\c++\study for mid\mid\sef\main.cpp
+	<iostream>
+	<iomanip>
+	<conio.h>
+
